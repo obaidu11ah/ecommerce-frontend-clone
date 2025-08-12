@@ -544,9 +544,16 @@
 
 </body>
 <script>
- // Detect device type
+// Enhanced device detection
         function isMobileOrTablet() {
-            return /Mobi|Android|iPhone|iPad|iPod|Tablet|Mobile/i.test(navigator.userAgent);
+            // Check user agent
+            const isMobile = /Mobi|Android|iPhone|iPad|iPod|Tablet|Mobile/i.test(navigator.userAgent);
+            
+            // Check screen size as fallback
+            const screenWidth = window.innerWidth || document.documentElement.clientWidth;
+            const isSmallScreen = screenWidth < 1024;
+            
+            return isMobile || isSmallScreen;
         }
 
         window.onload = function() {
@@ -567,13 +574,15 @@
                 `;
                 
                 // Show alert first
-                alert('You are on a mobile or tablet. This app is only available on desktop devices.');
+                alert('This app is only available on desktop devices. Please use a computer to access this application.');
                 
                 // Insert blocker and hide main content
                 document.body.insertBefore(blocker, document.body.firstChild);
                 document.querySelector('header').style.display = 'none';
+                
+                // Make blocker visible
+                blocker.style.display = 'flex';
             }
-            // For desktop: no action needed, content shows normally
         }
 </script>
 </html>
