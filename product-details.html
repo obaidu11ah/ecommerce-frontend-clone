@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="nav">
+            <div class="logo-brand">
+                <div class="logo"><i class="fa-solid fa-bag-shopping"></i></div>
+                <div class="brand">
+                    <h1><a href="index.html" style="color: inherit; text-decoration: none;">Brand</a></h1>
+                </div>
+            </div>
+            <div class="search-container">
+                    <input type="search" name="query" placeholder="Search" class="search-input">
+                        <select name="category" class="category-select">
+                            <option value="">All Category</option>
+                            <option value="bags">Bags</option>
+                            <option value="shoes">Shoes</option>
+                            <option value="watches">Watches</option>
+                        </select>
+                <button type="submit" class="search-button">Search</button>
+            </div>
+            <div class="icons">
+                    <div class="profile icon">
+                        <div class="p-logo"><i class="fa-solid fa-user"></i></div>
+                        <span><p>Profile</p></span>
+                    </div>
+                    <div class="message icon">
+                        <div class="m-logo"><i class="fa-solid fa-message"></i></div>
+                        <span><p>Message</p></span>
+                    </div>
+                        <div class="orders icon">
+                    <div class="ordr-logo">
+                        <a href="product.html" class="crt-logo" >
+                             <i class="fa-solid fa-heart"></i>
+                        </a>
+                    </div>
+                    <span><p>Orders</p></span>
+                    </div>
+                        <div class="cart icon">
+                        <a href="carts.html" class="crt-logo" >
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </a>
+                        <span><p>Cart</p></span>
+                </div>
+                </div>
+            </div>
+        </div>
+        <div class="sub-nav">
+            <div class="nav-list">
+                <i class="fa-solid fa-bars"></i>
+                <ul>
+                    <li>All Category</li>
+                    <li>Hot offers</li>
+                    <li>Gift Boxes</li>
+                    <li>Projects</li>
+                    <li>Menu item</li>
+                    <li>
+                        <select name="help" class="category-select">
+                            <option value="">Help</option>
+                        </select>
+                    </li>
+                </ul>
+            </div>
+            <div class="sub-nav-2">
+                        <select name="English, USD" class="category-select">
+                            <option value="">English, USD</option>
+                            <option value="">English, PKR</option>
+                            <option value="">English, IND</option>
+                            <option value="">English, BS</option>
+                        </select>
+                        <select name="help" class="category-select">
+                            <option value="">Ship to</option>
+                            <option value="">Ship to</option>
+                            <option value="">Ship to</option>
+                            <option value="">Ship to</option>
+                        </select>
+            </div>
+        </div>
+        <div class="breadcrumb">
+            <a href="#">Home</a>
+            <span><i class="fas fa-chevron-right"></i></span>
+            <a href="#">Clothings</a>
+            <span><i class="fas fa-chevron-right"></i></span>
+            <a href="#">Men’s wear</a>
+            <span><i class="fas fa-chevron-right"></i></span>
+            <a href="#">Summer Clothings</a>
+        </div>
+             
+        <div class="main-container">
+            <div class="product-grid">
+                <!-- Product Images Section -->
+                <div class="product-images">
+                    <div class="main-image">
+                        <img id="product-image" src="" alt="Product" style="width: 500px; height: 500px; border-radius: 8px; display: flex; align-items: center; justify-content: center; " />
+                    </div>
+                    <div class="thumbnail-grid">
+                        <div class="thumbnail active"><img style="width: 56px; height: 56px;padding: 5px; background-color: white;" src="pics/iphone-blue.jpg" alt=""></div>
+                        <div class="thumbnail"><img style="width: 56px; height: 56px;padding: 5px; background-color: white;" src="pics/iphone-red.jpg" alt=""></div>
+                        <div class="thumbnail"><img style="width: 56px; height: 56px;padding: 5px; background-color: white;" src="pics/4.png" alt=""></div>
+                        <div class="thumbnail"><img style="width: 56px; height: 56px;padding: 5px; background-color: white;" src="pics/h2   (6).jpg" alt=""></div>
+                        <div class="thumbnail"><img style="width: 56px; height: 56px;padding: 5px; background-color: white;" src="pics/h2   (2).jpg" alt=""></div>
+                        <div class="thumbnail"><img style="width: 57px; height: 56px;padding: 5px; background-color: white;" src="pics/h2   (3).jpg" alt=""></div>
+                    </div>
+                </div>
+
+                    <!-- Product Details Section -->
+                <div class="product-details">
+                    <div class="stock-status">In stock</div>
+                        
+                    <h1 id="product-name" style="color: #666"></h1>
+
+                        
+                    <div class="rating-section">
+                        <div class="stars">
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star empty">★</span>
+                        </div>
+                        <span class="review-text">32 reviews</span>
+                        <span class="sold-count">154 sold</span>
+                    </div>
+
+                    <div class="pricing">
+                        <div class="current-price">$98.00</div>
+                        <div class="original-price">$90.00</div>
+                        <div class="discounted-price">$78.00</div>
+                    </div>
+                        
+                    <div class="price-notes">
+                        <div class="price-note">50-100 pcs</div>
+                        <div class="price-note">100-500 pcs</div>
+                        <div class="price-note">500+ pcs</div>
+                    </div>
+
+                    <div class="product-specs">
+                            <div class="spec-label">Price:</div>
+                            <div class="spec-value">Negotiable</div>
+                            
+                            <div class="spec-label">Type:</div>
+                            <div class="spec-value">Classic products</div>
+                            
+                            <div class="spec-label">Material:</div>
+                            <div class="spec-value">Plastic material</div>
+                            
+                            <div class="spec-label">Design:</div>
+                            <div class="spec-value">Modern nice</div>
+                            
+                            <div class="spec-label">Customization:</div>
+                            <div class="spec-value">Customized logo and design custom packages</div>
+                            
+                            <div class="spec-label">Protection:</div>
+                            <div class="spec-value">Refund Policy</div>
+                            
+                            <div class="spec-label">Warranty:</div>
+                            <div class="spec-value">2 years full warranty</div>
+                    </div>
+                 </div>
+
+                    <!-- Supplier Section -->
+                <div class="supplier-section">
+                        <div class="supplier-header">
+                            <div class="supplier-avatar">R</div>
+                            <div class="supplier-info">
+                                <h3>Supplier</h3>
+                                <div class="supplier-name">Guangxi Trading LLC</div>
+                        </div>
+                    </div>
+
+                    <div class="supplier-details">
+                        <div class="supplier-detail location">
+                                <div class="detail-icon">🇩🇪</div>
+                                <span>Germany, Berlin</span>
+                        </div>
+                            
+                        <div class="supplier-detail verified">
+                                <div class="detail-icon">✓</div>
+                                <span>Verified Seller</span>
+                        </div>
+                            
+                            <div class="supplier-detail shipping">
+                                <div class="detail-icon">🌐</div>
+                                <span>Worldwide shipping</span>
+                            </div>
+                    </div>
+
+                    <div class="action-buttons">
+                            <button class="btn btn-primary">Send inquiry</button>
+                            <button class="btn btn-outline">Seller's profile</button>
+                            <button class="btn btn-save">♡ Save for later</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    <div class="product-showcase">
+        <!-- Left Section - Tabbed Content -->
+        <div class="content-tabs-wrapper">
+            <div class="tab-navigation">
+                <button class="tab-button active" data-tab="description">Description</button>
+                <button class="tab-button" data-tab="reviews">Reviews</button>
+                <button class="tab-button" data-tab="shipping">Shipping</button>
+                <button class="tab-button" data-tab="about-seller">About seller</button>
+            </div>
+
+            <div class="tab-content">
+                <!-- Description Tab -->
+                <div class="tab-panel active" id="description">
+                    <div class="description-text">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+                    </div>
+                    <div class="description-text">
+                        Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                    </div>
+
+                    <table class="specs-table">
+                        <tr>
+                            <td>Model</td>
+                            <td>#8786867</td>
+                        </tr>
+                        <tr>
+                            <td>Style</td>
+                            <td>Classic style</td>
+                        </tr>
+                        <tr>
+                            <td>Certificate</td>
+                            <td>ISO-898921212</td>
+                        </tr>
+                        <tr>
+                            <td>Size</td>
+                            <td>34mm x 450mm x 19mm</td>
+                        </tr>
+                        <tr>
+                            <td>Memory</td>
+                            <td>36GB RAM</td>
+                        </tr>
+                    </table>
+
+                    <ul class="features-list">
+                        <li>Some great feature name here</li>
+                        <li>Lorem ipsum dolor sit amet, consectetur</li>
+                        <li>Duis aute irure dolor in reprehenderit</li>
+                        <li>Some great feature name here</li>
+                    </ul>
+                </div>
+
+                <!-- Reviews Tab -->
+                <div class="tab-panel" id="reviews">
+                    <div class="reviews-summary">
+                        <div class="rating-display">
+                            <div class="rating-score">4.2</div>
+                            <div class="rating-stars">★★★★☆</div>
+                            <div class="review-count">Based on 32 reviews</div>
+                        </div>
+                        <div class="rating-breakdown">
+                            <div class="rating-bar">
+                                <span>5★</span>
+                                <div class="rating-bar-fill">
+                                    <div class="rating-bar-progress" style="width: 60%"></div>
+                                </div>
+                                <span>18</span>
+                            </div>
+                            <div class="rating-bar">
+                                <span>4★</span>
+                                <div class="rating-bar-fill">
+                                    <div class="rating-bar-progress" style="width: 25%"></div>
+                                </div>
+                                <span>8</span>
+                            </div>
+                            <div class="rating-bar">
+                                <span>3★</span>
+                                <div class="rating-bar-fill">
+                                    <div class="rating-bar-progress" style="width: 12%"></div>
+                                </div>
+                                <span>4</span>
+                            </div>
+                            <div class="rating-bar">
+                                <span>2★</span>
+                                <div class="rating-bar-fill">
+                                    <div class="rating-bar-progress" style="width: 3%"></div>
+                                </div>
+                                <span>1</span>
+                            </div>
+                            <div class="rating-bar">
+                                <span>1★</span>
+                                <div class="rating-bar-fill">
+                                    <div class="rating-bar-progress" style="width: 3%"></div>
+                                </div>
+                                <span>1</span>
+                            </div>
+                        </div>
+                    </div>
+                    <p>Customer reviews help other buyers make informed decisions. Share your experience with this product to help others.</p>
+                </div>
+
+                <!-- Shipping Tab -->
+                <div class="tab-panel" id="shipping">
+                    <div class="shipping-info">
+                        <div class="shipping-card">
+                            <h4>Standard Delivery</h4>
+                            <p>Free shipping on orders over $50. Delivery within 5-7 business days.</p>
+                        </div>
+                        <div class="shipping-card">
+                            <h4>Express Shipping</h4>
+                            <p>Fast delivery within 2-3 business days. Additional charges may apply.</p>
+                        </div>
+                        <div class="shipping-card">
+                            <h4>International</h4>
+                            <p>Worldwide shipping available. Delivery time varies by location (7-14 days).</p>
+                        </div>
+                        <div class="shipping-card">
+                            <h4>Return Policy</h4>
+                            <p>30-day return policy. Items must be in original condition with tags attached.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- About Seller Tab -->
+                <div class="tab-panel" id="about-seller">
+                    <div class="seller-info">
+                        <div class="seller-avatar">G</div>
+                        <div class="seller-details">
+                            <h3>Guangxi Trading LLC</h3>
+                            <p>Professional supplier specializing in high-quality apparel and accessories. Based in Berlin, Germany, we have been serving customers worldwide since 2018.</p>
+                            
+                            <div class="seller-stats">
+                                <div class="stat">
+                                    <div class="stat-value">4.8</div>
+                                    <div class="stat-label">Rating</div>
+                                </div>
+                                <div class="stat">
+                                    <div class="stat-value">1.2K</div>
+                                    <div class="stat-label">Products</div>
+                                </div>
+                                <div class="stat">
+                                    <div class="stat-value">98%</div>
+                                    <div class="stat-label">Response</div>
+                                </div>
+                                <div class="stat">
+                                    <div class="stat-value">5 yrs</div>
+                                    <div class="stat-label">Experience</div>
+                                </div>
+                            </div>
+                            
+                            <p><strong>Specialties:</strong> Men's clothing, business attire, casual wear, custom designs</p>
+                            <p><strong>Certifications:</strong> ISO 9001, OEKO-TEX Standard 100</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right Section - Recommendations -->
+        <div class="recommendations-section">
+            <h3 class="recommendations-title">You may like</h3>
+            
+            <div class="recommendation-item">
+                <div class="recommendation-image"><img src="pics/h2   (1).jpg" alt=""></div>
+                <div class="recommendation-details">
+                    <h4>Iphone 12 pro max, grey color -15% deal</h4>
+                    <div class="recommendation-price">$7.00 - $99.50</div>
+                </div>
+            </div>
+
+            <div class="recommendation-item">
+                <div class="recommendation-image"><img  src="pics/h2   (2).jpg" alt=""></div>
+                <div class="recommendation-details">
+                    <h4>Iphone 15 pro Max grey color</h4>
+                    <div class="recommendation-price">$7.00 - $99.50</div>
+                </div>
+            </div>
+
+            <div class="recommendation-item">
+                <div class="recommendation-image">
+                    <img src="pics/29.png" alt="Apple Watch">
+                </div>
+                <div class="recommendation-details">
+                    <h4>Apple Head Phone Space Gray</h4>
+                    <div class="recommendation-price">$7.00 - $99.50</div>
+                </div>
+            </div>
+
+
+            <div class="recommendation-item">
+                <div class="recommendation-image"><img src="pics/h2   (5).jpg" alt=""></div>
+                <div class="recommendation-details">
+                    <h4>Iphone 8+ cover black</h4>
+                    <div class="recommendation-price">$7.00 - $99.50</div>
+                </div>
+            </div>
+
+            <div class="recommendation-item">
+                <div class="recommendation-image"><img src="pics/h2   (3).jpg" alt=""></div>
+                <div class="recommendation-details">
+                    <h4>Google pixel 9 8GB</h4>
+                    <div class="recommendation-price">$7.00 - $99.50</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="marketplace-showcase">
+        <div class="related-products-container">
+            <!-- Header Section -->
+            <div class="section-header">
+                <h2 class="section-title">Related products</h2>
+            </div>
+
+            <!-- Products Grid -->
+            <div class="products-grid">
+                <div class="product-card product-1">
+                    <div class="product-image1"><img src="pics/iphone-red.jpg" alt="" style="width: 189px;height: 200px;"></div>
+                    <div class="product-name">Iphone 12 pro max Original(Red)</div>
+                </div>
+
+                <div class="product-card product-2">
+                    <div class="product-image"><img src="pics/h2   (2).jpg" alt="" style="width: 220px;height: 200px;"></div>
+                    <div  style="margin-top: 3.4rem" class="product-name">Iphone 15 Original (Black/Grey)</div>
+                </div>
+
+                <div class="product-card product-3">
+                    <div class="product-image1"><img src="pics/h2   (5).jpg" alt="" style="width: 189px;height: 200px;"></div>
+                    <div class="product-name">Iphone 8+ Covers, Black</div>
+                </div>
+
+                <div class="product-card product-4">
+                    <div class="product-image1"><img src="pics/h2   (4).jpg" alt="" style="width: 189px;height: 200px;"></div>
+                    <div class="product-name">Xiaomi Redmi 8 Digital</div>
+                </div>
+
+                <div class="product-card product-5">
+                    <div class="product-image1"><img src="pics/macbook-silver.jpg" alt="" style="width: 189px;height: 200px;"></div>
+                    <div class="product-name">Apple Mac Book</div>
+                </div>
+
+                <div class="product-card product-6">
+                    <div class="product-image1"><img src="pics/watch-white.jpg" alt="" style="width: 189px;height: 200px;"></div>
+                    <div class="product-name">Apple watch</div>
+                </div>
+            </div>
+
+            <!-- Discount Banner -->
+            <div class="discount-banner">
+                <div class="discount-content">
+                    <div class="discount-title">Super discount on more than 100 USD</div>
+                    <div class="discount-subtitle">Get big all discount for a limited time</div>
+                </div>
+                <button class="shop-now-btn">Shop now</button>
+            </div>
+        </div>
+    </div>     
+    <div class="container8">
+        <div class="left">
+            <div class="logo-brand">
+                <div class="logo"><i class="fa-solid fa-bag-shopping"></i></div>
+                <div class="brand"><h2>Brand</h2></div>
+            </div>
+            <div class="text">Best information about the company <br>gies here but now lorem ipsum is</div>
+            <div class="social-icons">
+                <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+        <div class="center">
+            <div class="box">
+                <div class="text">About</div>
+                <p>About Us<br>Find store<br>Categories<br>Blogs</p>
+            </div>
+            <div class="box">
+                <div class="text">About</div>
+                <p>About Us<br>Find store<br>Categories<br>Blogs</p>
+            </div>
+            <div class="box">
+                <div class="text">About</div>
+                <p>About Us<br>Find store<br>Categories<br>Blogs</p>
+            </div>
+            <div class="box">
+                <div class="text">About</div>
+                <p>About Us<br>Find store<br>Categories<br>Blogs</p>
+            </div>
+        </div>
+        <div class="right">
+            <div class="app-section">
+            <h3>Get app</h3>
+            <a href="#" class="app-btn app-store">
+                <i class="fab fa-apple"></i>
+                <span>
+                <small>Download on the</small><br>
+                App Store
+                </span>
+            </a>
+
+            <a href="#" class="app-btn google-play">
+                <i class="fab fa-google-play"></i>
+                <span>
+                <small>GET IT ON</small><br>
+                Google Play
+                </span>
+            </a>
+            </div>
+        </div>
+    </div>
+    <div class="container9">
+        <div class="txt">© 2023 Ecommerce. </div>
+        <div class="selector">
+            <img src="https://flagcdn.com/w40/us.png" alt="US Flag" class="flag-icon" />
+            <select name="" id="">
+                <option value="">English</option>
+            </select>
+        </div>
+    </div>
+</header>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const img = localStorage.getItem('productImage');
+    const name = localStorage.getItem('productName');
+    
+    if(img && name) {
+        document.getElementById('product-image').src = img;
+        document.getElementById('product-name').textContent = name;
+    } else {
+        // Fallback if no data in localStorage
+        document.getElementById('product-image').src = 'default-image.jpg';
+        document.getElementById('product-name').textContent = 'Product Not Found';
+    }
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+    // Save Button Logic
+    const saveBtn = document.querySelector('.btn-save');
+    if (saveBtn) {
+        saveBtn.addEventListener('click', function () {
+            this.classList.toggle('active');
+
+            // Optional: Change icon/text too
+            if (this.classList.contains('active')) {
+                this.innerHTML = '❤️ Saved';
+            } else {
+                this.innerHTML = '♡ Save for later';
+            }
+        });
+    }
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+            const tabButtons = document.querySelectorAll('.tab-button');
+            const tabPanels = document.querySelectorAll('.tab-panel');
+
+            tabButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const targetTab = this.getAttribute('data-tab');
+                    
+                    // Remove active class from all buttons and panels
+                    tabButtons.forEach(btn => btn.classList.remove('active'));
+                    tabPanels.forEach(panel => panel.classList.remove('active'));
+                    
+                    // Add active class to clicked button
+                    this.classList.add('active');
+                    
+                    // Show corresponding panel
+                    document.getElementById(targetTab).classList.add('active');
+                });
+            });
+        });
+
+
+
+// Get saved product data
+const imgSrc = localStorage.getItem("selectedProductImage");
+const title = localStorage.getItem("selectedProductTitle");
+
+// Set data without removing thumbnails
+if (imgSrc) {
+    const mainImg = document.getElementById("product-image");
+    mainImg.setAttribute("src", imgSrc);
+}
+
+if (title) {
+    document.getElementById("product-name").innerText = title;
+}
+</script>
+
+
+</script> 
+
+<script src="js/javascript.js"></script>
+</body>
+</html>

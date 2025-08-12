@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="nav">
+            <div class="logo-brand">
+                <div class="logo"><i class="fa-solid fa-bag-shopping"></i></div>
+                <div class="brand">
+                    <h1><a href="index.html" style="color: inherit; text-decoration: none;">Brand</a></h1>
+                </div>
+            </div>
+            <div class="search-container">
+                    <input type="search" name="query" placeholder="Search" class="search-input">
+                        <select name="category" class="category-select">
+                            <option value="">All Category</option>
+                            <option value="bags">Bags</option>
+                            <option value="shoes">Shoes</option>
+                            <option value="watches">Watches</option>
+                        </select>
+                <button type="submit" class="search-button">Search</button>
+            </div>
+            <div class="icons">
+                    <div class="profile icon">
+                        <div class="p-logo"><i class="fa-solid fa-user"></i></div>
+                        <span><p>Profile</p></span>
+                    </div>
+                    <div class="message icon">
+                        <div class="m-logo"><i class="fa-solid fa-message"></i></div>
+                        <span><p>Message</p></span>
+                    </div>
+                        <div class="orders icon">
+                    <div class="ordr-logo">
+                        <a href="category.html" class="crt-logo" >
+                             <i class="fa-solid fa-heart"></i>
+                        </a>
+                    </div>
+                    <span><p>Orders</p></span>
+                    </div>
+                        <div class="cart icon">
+                        <a href="carts.html" class="crt-logo" >
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </a>
+                        <span><p>Cart</p></span>
+                </div>
+            </div>
+        </div>
+        <div class="sub-nav">
+            <div class="nav-list">
+                <i class="fa-solid fa-bars"></i>
+                <ul>
+                    <li>All Category</li>
+                    <li>Hot offers</li>
+                    <li>Gift Boxes</li>
+                    <li>Projects</li>
+                    <li>Menu item</li>
+                    <li>
+                        <select name="help" class="category-select">
+                            <option value="">Help</option>
+                        </select>
+                    </li>
+                </ul>
+            </div>
+            <div class="sub-nav-2">
+                        <select name="English, USD" class="category-select">
+                            <option value="">English, USD</option>
+                            <option value="">English, PKR</option>
+                            <option value="">English, IND</option>
+                            <option value="">English, BS</option>
+                        </select>
+                        <select name="help" class="category-select">
+                            <option value="">Ship to</option>
+                            <option value="">Ship to</option>
+                            <option value="">Ship to</option>
+                            <option value="">Ship to</option>
+                        </select>
+            </div>
+        </div>
+        <div class="breadcrumb">
+            <a href="#">Home</a>
+            <span><i class="fas fa-chevron-right"></i></span>
+            <a href="#">Clothings</a>
+            <span><i class="fas fa-chevron-right"></i></span>
+            <a href="#">Men’s wear</a>
+            <span><i class="fas fa-chevron-right"></i></span>
+            <a href="#">Summer Clothings</a>
+        </div>
+        <div class="container10">
+            <div class="sidebar">
+                <h4 style="margin-top: -20px; border-top: 1px solid rgba(184, 184, 184, 0.664); padding-top: 10px;">Category</h4>
+                <a href="#"><a href="#">Mobile accessory<br></a></a>
+                <a href="#"><a href="#">Electronics</a><br></a></a>
+                <a href="#"><a href="#">Smart Phone<br></a></a>
+                <a href="#"><a href="#">Modern tech<br></a></a>
+                <div class="seeall"><a href="#">See all</a></div>
+
+                <h4>Brands</h4>
+                <label><input type="checkbox"> Samsung</label>
+                <label><input type="checkbox"> Apple</label>
+                <label><input type="checkbox"> Huawei</label>
+                <label><input type="checkbox"> Pocco</label>
+                <label><input type="checkbox"> Lenovo</label>
+                <div class="seeall"><a href="#">See all</a></div>
+
+                <h4>Features</h4>
+                <label><input type="checkbox"> 8GB RAM</label>
+                <label><input type="checkbox"> Plastic cover</label>
+                <label><input type="checkbox"> Metallic</label>
+                <label><input type="checkbox"> Super power</label>
+                <label><input type="checkbox"> Larger Memory</label>
+                <div class="seeall"><a href="#">See all</a></div>
+
+                <h4>Condition</h4>
+                    <input type="radio" name="condition" value="new"> New
+                    </label>
+                    <label>
+                        <input type="radio" name="condition" value="refurbished"> Refurbished
+                    </label>
+                    <label>
+                        <input type="radio" name="condition" value="brand_new"> Brand 
+                    </label>
+                    <label>
+                        <input type="radio" name="condition" value="brand_new"> New 
+                    </label>
+                <h4>Price Range</h4>
+                <div class="price-inputs">
+                <input type="number" placeholder="Min" />
+                <input type="number" placeholder="Max" />
+                </div>
+                <button class="apply-btn">Apply</button>
+
+                <h4>Ratings</h4>
+                <div class="rating-filter">
+                    <label>
+                        <input type="checkbox" name="rating" value="5">
+                        ⭐⭐⭐⭐⭐
+                    </label><br>
+
+                    <label style="color: rgb(71, 70, 70); margin: none;">
+                        <input type="checkbox" name="rating" value="4">
+                        ⭐⭐⭐⭐<i class="fa-regular fa-star"></i>
+                    </label><br>
+
+                    <label style="color: rgb(71, 70, 70); margin: none;">
+                        <input type="checkbox" name="rating" value="2">
+                        ⭐⭐<i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i>
+                    </label><br>
+
+                    <label style="color: rgb(71, 70, 70);">
+                        <input type="checkbox" name="rating" value="1">
+                        ⭐<i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i>
+                    </label>
+                </div>
+            </div>
+            <div class="right-content">
+                <div class="products">
+                <div class="filter-bar">
+                    <span>12,911 items in <b>Mobile accessory</b></span>
+                </div>
+
+                <div class="right">
+                    <!-- Verified Checkbox -->
+                    <label class="verifiedname">
+                    <input type="checkbox" />
+                    Verified only
+                    </label>
+                    <!-- Dropdown Selector -->
+                    <select class="selector">
+                    <option value="featured">Featured</option>
+                    <option value="new">Brand New</option>
+                    <option value="refurbished">Refurbished</option>
+                    <option value="used">Used</option>
+                    </select>
+                    <!-- Icon view buttons -->
+                    <div class="icon-container">
+                    <a href="category.html"  class="icon-box">
+                            <i class="fa-solid fa-table-cells"></i>
+                    </a>
+                    <div class="icon-box active">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <div class="selected-filters" id="selectedFilters"></div>
+            <div class="main">
+                    <div class="product-card-1">
+                        <img src="pics/products image/image 33.png" alt="Canon Camera EOS 2000" class="product-image" style="width: 150px; height: 150px;">
+                        <div class="product-info">
+                            <h3>NovaStream X10, Red iphone 11 10x zoom</h3>
+                            <div class="price">$998.00 <span class="old-price">$1128.00</span></div>
+                            <div class="rating-info">
+                                <span class="stars">⭐⭐⭐</span>
+                                <span class="rating-score" style="font-size: 16px;">7.5</span>
+                                <span class="orders">• 154 orders</span>
+                                <span class="shipping">• Free Shipping</span>
+                            </div>
+                            <p class="product-description">A cutting-edge mobile device featuring an edge-to-edge display and a powerful dual-lens camera array for advanced photography. Its primary functionality is to provide a seamless user experience for communication, media consumption, and high-performance applications.</p>
+                            <a href="mian-product.html" class="details-link">View details</a>
+                        </div>
+                        <div class="wishlist" onclick="toggleWishlist(this)">
+                            <i class="fa-regular fa-heart"></i>
+                        </div>
+                    </div>
+
+                    <div class="product-card-1">
+                        <img src="pics/products image/image 32.png" alt="GoPro HERO6 4K Action Camera" class="product-image">
+                        <div class="product-info">
+                            <h3>SmartTablet,BLack Pro Max - 256GB Storage</h3>
+                            <div class="price">$998.00</div>
+                            <div class="rating-info">
+                                <span class="stars">⭐⭐⭐⭐</span>
+                                <span class="rating-score" style="font-size: 16px;">7.5</span>
+                                <span class="orders">• 154 orders</span>
+                                <span class="shipping">• Free Shipping</span>
+                            </div>
+                            <p class="product-description">Latest flagship SmartTablet with advanced camera system, powerful processor, and all-day battery life...</p>
+                            <a href="mian-product.html" class="details-link">View details</a>
+                            
+                        </div>
+                        <div class="featured-badge">📱</div>
+                        <div class="wishlist" onclick="toggleWishlist(this)">
+                            <i class="fa-regular fa-heart"></i>
+                        </div>
+                    </div>
+
+                    <div class="product-card-1">
+                        <img src="pics/products image/image 23.png" alt="Smartphone Pro Max" class="product-image">
+                        <div class="product-info">
+                            <h3>Black Horizon Pixel, Smartmobile - Black 4k/dual speaker</h3>
+                            <div class="price">$1,299.00 <span class="old-price">$1,499.00</span></div>
+                            <div class="rating-info">
+                                <span class="stars">⭐⭐⭐⭐⭐</span>
+                                <span class="rating-score" style="font-size: 16px;">8.2</span>
+                                <span class="orders">• 89 orders</span>
+                                <span class="shipping">• Free Shipping</span>
+                            </div>
+                            <p class="product-description">This sleek and minimalist smartphone is designed for an intuitive and responsive user experience. Its key functionality includes a high-speed processor, a vibrant display for crisp visuals, and a clean, bloatware-free operating system.</p>
+                            <a href="mian-product.html" class="details-link">View details</a>
+                        </div>
+                        <div class="wishlist" onclick="toggleWishlist(this)">
+                            <i class="fa-regular fa-heart"></i>
+                        </div>
+                    </div>
+
+                    <div class="product-card-1">
+                        <img  style=" width: 150px; height: auto" src="pics/products image/image 34.png" alt="Wireless Headphones" class="product-image">
+                        <div class="product-info">
+                            
+                            <h3>Gaming Laptop - RTX 4060, 16GB RAM</h3>
+                            <div class="price">$299.00 <span class="old-price">$399.00</span></div>
+                            <div class="rating-info">
+                                <span class="stars">⭐⭐</span>
+                                <span class="rating-score" style="font-size: 16px;">7.8</span>
+                                <span class="orders">• 203 orders</span>
+                                <span class="shipping">• Free Shipping</span>
+                            </div>
+                            <p class="product-description">High-performance gaming laptop with latest graphics card, fast processor, and RGB keyboard...</p>
+                            <a href="mian-product.html" class="details-link">View details</a>
+                        </div>
+                       <div class="wishlist" onclick="toggleWishlist(this)">
+                            <i class="fa-regular fa-heart"></i>
+                        </div>
+                    </div>
+
+                    <div class="product-card-1">
+                        <img style="height: 185px; width: 160px;" src="pics/products image/image 35.png" alt="Laptop Gaming Setup" class="product-image">
+                        <div class="product-info">
+                            
+                            <h3>Smart Watch Series 9 - GPS + Cellular</h3>
+                            <div class="price">$1,899.00</div>
+                            <div class="rating-info">
+                                <span class="stars">⭐⭐⭐⭐⭐</span>
+                                <span class="rating-score" style="font-size: 16px;">8.5</span>
+                                <span class="orders">• 67 orders</span>
+                                <span class="shipping">• Free Shipping</span>
+                            </div>
+                            <p class="product-description">Advanced smartwatch with health monitoring, GPS tracking, and cellular connectivity...</p>
+                            <a href="mian-product.html" class="details-link">View details</a>
+                        </div>
+                        <div class="wishlist" onclick="toggleWishlist(this)">
+                            <i class="fa-regular fa-heart"></i>
+                        </div>
+                    </div>
+
+                    <div class="product-card-1">
+                        <img style="height: 185px; width: 160px;"  src="pics/products image/image 86.png" alt="Smart Watch Series" class="product-image">
+                        <div class="product-info">
+                            <h3>Premium Wireless Headphones - Noise Cancelling</h3>
+                            <div class="price">$449.00 <span class="old-price">$529.00</span></div>
+                            <div class="rating-info">
+                                <span class="stars">⭐⭐⭐⭐</span>
+                                <span class="rating-score" style="font-size: 16px;">7.9</span>
+                                <span class="orders">• 142 orders</span>
+                                <span class="shipping">• Free Shipping</span>
+                            </div>
+                            <p class="product-description">High-quality wireless headphones with active noise cancellation and superior sound quality...</p>
+                            <a href="mian-product.html" class="details-link">View details</a>
+                        </div>
+                        <div class="wishlist" onclick="toggleWishlist(this)">
+                            <i class="fa-regular fa-heart"></i>
+                        </div>
+                    </div>
+                    <!-- pagination 1 2 3 -->
+                    <div class="pagination-container">
+                        <div class="pagination-left">
+                            <select class="show-dropdown">
+                                <option value="10">Show 10</option>
+                                <option value="20">Show 20</option>
+                                <option value="50">Show 50</option>
+                            </select>
+                        </div>
+                        <div class="pagination-right">
+                            <button class="page-btn prev-btn"><i class="fa-solid fa-chevron-left"></i></button>
+                            <button class="page-btn active">1</button>
+                            <button class="page-btn">2</button>
+                            <button class="page-btn">3</button>
+                            <button class="page-btn next-btn"><i class="fa-solid fa-chevron-right"></i></button>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+        </div>
+    <div class="container8">
+        <div class="left">
+            <div class="logo-brand">
+                <div class="logo"><i class="fa-solid fa-bag-shopping"></i></div>
+                <div class="brand"><h2>Brand</h2></div>
+            </div>
+            <div class="text">Best information about the company <br>gies here but now lorem ipsum is</div>
+            <div class="social-icons">
+                <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+        <div class="center">
+            <div class="box">
+                <div class="text">About</div>
+                <p>About Us<br>Find store<br>Categories<br>Blogs</p>
+            </div>
+            <div class="box">
+                <div class="text">About</div>
+                <p>About Us<br>Find store<br>Categories<br>Blogs</p>
+            </div>
+            <div class="box">
+                <div class="text">About</div>
+                <p>About Us<br>Find store<br>Categories<br>Blogs</p>
+            </div>
+            <div class="box">
+                <div class="text">About</div>
+                <p>About Us<br>Find store<br>Categories<br>Blogs</p>
+            </div>
+        </div>
+        <div class="right">
+            <div class="app-section">
+            <h3>Get app</h3>
+            <a href="#" class="app-btn app-store">
+                <i class="fab fa-apple"></i>
+                <span>
+                <small>Download on the</small><br>
+                App Store
+                </span>
+            </a>
+
+            <a href="#" class="app-btn google-play">
+                <i class="fab fa-google-play"></i>
+                <span>
+                <small>GET IT ON</small><br>
+                Google Play
+                </span>
+            </a>
+            </div>
+        </div>
+    </div>
+    <div class="container9">
+        <div class="txt">© 2023 Ecommerce. </div>
+        <div class="selector">
+            <img src="https://flagcdn.com/w40/us.png" alt="US Flag" class="flag-icon" />
+            <select name="" id="">
+                <option value="">English</option>
+            </select>
+        </div>
+    </div>
+</header> 
+<script>
+    
+    document.addEventListener('DOMContentLoaded', function() {
+    const img = localStorage.getItem('productImage');
+    const name = localStorage.getItem('productName');
+    
+    if(img && name) {
+        document.getElementById('product-image').src = img;
+        document.getElementById('product-name').textContent = name;
+    } else {
+        // Fallback if no data in localStorage
+        document.getElementById('product-image').src = 'default-image.jpg';
+        document.getElementById('product-name').textContent = 'Product Not Found';
+    }
+});
+</script>
+<script src="js/javascript.js"></script>
+</body>
+</html>
