@@ -36,10 +36,10 @@ Perfect for beginners learning frontend development and for portfolio showcase.
 
 ---
 
-## 🌐 Live Demo
-- **Live Project Link:** `https://your-live-project-link.com` *(Replace with actual link if deployed)*
+## 🌐 Live Demo  
+🚀 **Live Project:** [E-commerce Frontend Clone](https://obaidu11ah.github.io/ecommerce-frontend-clone/)  
+💻 *Note: This project is optimized for desktop view only.*
 
----
 
 ## Tech Stack
 
