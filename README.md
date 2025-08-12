@@ -111,5 +111,5 @@ ecommerce-frontend-design/
 
 For questions or feedback, please contact:  
 **Obaid Ullah**  
-Email: your-email@example.com  
-LinkedIn: [linkedin.com/in/obaidullah](https://linkedin.com/in/obaidullah)
+Email: obaidullah2956@gmail.com  
+LinkedIn: [linkedin.com](https://www.linkedin.com/in/obaid-ullah-381791266?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app)
